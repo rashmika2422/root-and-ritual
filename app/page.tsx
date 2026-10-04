@@ -1,8 +1,10 @@
-import MobileShell from "@/components/layout/mobileshell"
+import Header from "../components/layout/Header"
+import SiteShell from "@/components/layout/SiteShell"
 
 export default function Home() {
   return (
-    <MobileShell>
+    <SiteShell>
+      <Header/>
       <main className="px-4 py-6">
         <p className="text-xs font-semibold tracking-[0.2em] text-[var(--brown)]">
           AYURVEDIC
@@ -16,6 +18,7 @@ export default function Home() {
           Website foundation ready.
         </p>
       </main>
-    </MobileShell>
+    </SiteShell>
+    
   )
 }
